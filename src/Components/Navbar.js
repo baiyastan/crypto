@@ -41,6 +41,7 @@ function Navbar() {
         setOpen(false)
       }
     return (
+      <>
         <div className="navbar">
             <div className="navbar__bg">
                 <div className="navbar__bg__logo">
@@ -228,6 +229,7 @@ function Navbar() {
                 <img className="navbar__bg__phone" src={GroupPhone} />
             </div>
         </div>
+        </>
     );
 }
 

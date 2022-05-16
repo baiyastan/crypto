@@ -1,8 +1,10 @@
 @import '../mixins.scss';
 
+
 .navbar {
     width: 100%;
     position: relative;
+    height: 800px;
     &__bg {
         position: absolute;
         top: 0;
@@ -42,7 +44,8 @@
                     display: block;
                   }
                 .menu-item {
-                    border: 1px solid white;
+                    height: 2px;
+                    background-color: #FFFFFF;
                     
                     margin-top: 6px;
                 }  
