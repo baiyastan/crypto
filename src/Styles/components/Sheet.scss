@@ -1,0 +1,215 @@
+@import "../mixins.scss";
+.sheets {
+    margin-top: 200px;
+    width: 100%;
+    .sheet-containers {
+        position: relative;
+        margin-left: 120px;
+        .line {
+            width: 1109px;
+            height: 6px;
+            border: 2px solid #e0e0e0;
+            background: linear-gradient(to right, #f8ba1a 50%, #e0e0e0 50%);
+            position: absolute;
+            top: 0px;
+            left: 2px;
+            @include mobile {
+                transform: rotate(90deg);
+                left: -600px;
+                top: 400px;
+            }
+        }
+        .crug {
+            border: 6px solid #f8ba1a;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+
+            background: #ffffff;
+        }
+        .crug1 {
+            border: 6px solid #e0e0e0;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+
+            background: #090f3f;
+        }
+        .one {
+            position: absolute;
+            top: -8px;
+            @include mobile {
+                left: -58px;
+                top: -150px;
+            }
+        }
+        .two {
+            position: absolute;
+            top: -8px;
+            left: 170px;
+            @include mobile {
+                left: -58px;
+                top: 40px;
+            }
+        }
+        .three {
+            position: absolute;
+            top: -8px;
+            left: 360px;
+            @include mobile {
+                left: -58px;
+                top: 240px;
+            }
+        }
+        .four {
+            position: absolute;
+            top: -8px;
+            left: 540px;
+            @include mobile {
+                left: -58px;
+                top: 400px;
+            }
+        }
+        .five {
+            position: absolute;
+            top: -8px;
+            left: 730px;
+            @include mobile {
+                left: -58px;
+                top: 600px;
+            }
+        }
+        .sex {
+            position: absolute;
+            top: -8px;
+            left: 900px;
+            @include mobile {
+                left: -58px;
+                top: 800px;
+            }
+        }
+        .text {
+            font-family: "Hind";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+            color: #4f4f4f;
+        }
+        .black-text {
+            font-family: "Hind";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 150%;
+            display: flex;
+            align-items: flex-end;
+            letter-spacing: 0.02em;
+            color: #090f3f;
+            width: 208px;
+            height: 42px;
+        }
+        .track {
+            position: absolute;
+            top: -150px;
+            left: 350px;
+            @include mobile {
+                top: 200px;
+                left: 0px;
+            }
+        }
+        .november {
+            position: absolute;
+            top: -50px;
+            @include mobile {
+                top: -150px;
+            }
+        }
+        .march {
+            position: absolute;
+            top: -50px;
+            left: 350px;
+            @include mobile {
+                top: 250px;
+                left: 0px;
+            }
+        }
+        .may {
+            position: absolute;
+            top: -50px;
+            left: 730px;
+            @include mobile {
+                top: 620px;
+                left: 0px;
+            }
+        }
+        .January {
+            position: absolute;
+            top: 130px;
+            left: 190px;
+            @include mobile {
+                top: 50px;
+                left: 0px;
+            }
+        }
+        .March {
+            position: absolute;
+            top: 130px;
+            left: 500px;
+            @include mobile {
+                top: 440px;
+                left: 0px;
+            }
+        }
+        .September {
+            position: absolute;
+            top: 130px;
+            left: 850px;
+            @include mobile {
+                top: 830px;
+                left: 0px;
+            }
+        }
+        .release {
+            position: absolute;
+            top: -150px;
+            left: 730px;
+            @include mobile {
+                top: 365px;
+                left: 0px;
+            }
+        }
+        .Development {
+            position: absolute;
+            top: 70px;
+            left: 190px;
+            @include mobile {
+                top: 0px;
+                left: 0px;
+            }
+        }
+        .release2 {
+            position: absolute;
+            top: 50px;
+            left: 500px;
+            @include mobile {
+                top: 575px;
+                left: 0px;
+            }
+        }
+        .Launch {
+            position: absolute;
+            top: 70px;
+            left: 850px;
+            @include mobile {
+                top: 760px;
+                left: 0px;
+            }
+        }
+    }
+
+    margin-bottom: 2rem;
+}
