@@ -1,5 +1,7 @@
 import '../Styles/components/Digital.scss'
 import undraw from '../assets/undraw_mobile.png'
+import Maskl from '../assets/MasklGroup4.png'
+import Maskl7 from '../assets/MaskGroup7.png'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel'
 function Main() {
@@ -72,6 +74,20 @@ function Main() {
                     
                 </div> 
             </div>
+        </div>
+        <div className="digital">
+            <img className="digital-img-2" src={Maskl}/>
+            <img className="digital-img-3" src={Maskl7}/>
+            <div  className="digital-right-2"> 
+                <div className="welcome">
+                    <div className="line"></div>
+                    <div>01. WELCOME</div>
+                </div>
+                <h1 className="digital-title">Lymcoin is Digital Cash You Can Spend  Anywhere</h1>
+                <p className="digital-des">Use Lymcoin to make instant, private payments online or in-store using our secure open-source platform hosted by thousands of users around the world.</p>
+                <div className="digital-btn">contuct us</div>
+            </div>
+
         </div>
         </>
     )
