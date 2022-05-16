@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import Digital from "./Digital";
 import "../Styles/components/Main.scss";
 import Sheet from "./Sheet";
+import Global from "./Global";
 function Main() {
   return (
     <div className="container">
@@ -9,6 +10,7 @@ function Main() {
       <br />
       <Digital />
       <Sheet />
+      <Global />
     </div>
   );
 }
