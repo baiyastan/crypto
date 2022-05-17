@@ -1,5 +1,4 @@
-@import '../mixins.scss';
-
+@import "../mixins.scss";
 
 .navbar {
     width: 100%;
@@ -10,18 +9,20 @@
         top: 0;
         @include mobile {
             width: 100%;
-          }
+        }
         &__img {
+            background-image: cover;
             @include mobile {
-                display: none
-              }
+                display: none;
+            }
         }
         &__phone {
             display: none;
             @include mobile {
                 display: block;
                 width: 100%;
-              }
+                background-image: cover;
+            }
         }
         &__logo {
             position: absolute;
@@ -29,7 +30,7 @@
             left: 30px;
             @include mobile {
                 left: 0px;
-              }
+            }
         }
         &__right {
             .buger-menu {
@@ -42,13 +43,13 @@
                 margin-top: 50px;
                 @include mobile {
                     display: block;
-                  }
+                }
                 .menu-item {
                     height: 2px;
-                    background-color: #FFFFFF;
-                    
+                    background-color: #ffffff;
+
                     margin-top: 6px;
-                }  
+                }
                 .linear {
                     width: 20px;
                 }
@@ -58,21 +59,52 @@
                 }
             }
 
-        @include flex(center, flex-end);
+            @include flex(center, flex-end);
 
-        &__menu {
-            position: absolute;
-            @include flex(center, space-between);
-            width: 40%;
-            list-style: none;
-            z-index: 99;
-            right: 15%;
-            top: 10px;
-            @include mobile {
-                display: none
-              }
-            &__li {
-                font-family: 'Hind';
+            &__menu {
+                position: absolute;
+                @include flex(center, space-between);
+                width: 40%;
+                list-style: none;
+                z-index: 99;
+                right: 15%;
+                top: 10px;
+                @include mobile {
+                    display: none;
+                }
+                &__li {
+                    font-family: "Hind";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 150%;
+                    /* identical to box height, or 20px */
+
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+
+                    /* white */
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    cursor: pointer;
+                }
+            }
+            &__btn {
+                text-transform: uppercase;
+                position: absolute;
+                width: 118px;
+                height: 34px;
+                right: 46px;
+                top: 18px;
+                cursor: pointer;
+
+                @include flex(center, center);
+
+                background: #090f3f;
+                border-radius: 28px;
+                font-family: "Hind";
                 font-style: normal;
                 font-weight: 600;
                 font-size: 13px;
@@ -85,231 +117,194 @@
                 text-transform: uppercase;
 
                 /* white */
-                text-transform: uppercase;
-                color: #FFFFFF;
-                cursor: pointer;
+
+                color: #ffffff;
+                @include mobile {
+                    display: none;
+                }
             }
         }
-        &__btn {
-            text-transform: uppercase;
+        .left {
             position: absolute;
-            width: 118px;
-            height: 34px;
-            right: 46px;
-            top: 18px;
-            cursor: pointer;
-
-            @include flex(center, center);
-
-            background: #090F3F;
-            border-radius: 28px;
-            font-family: 'Hind';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 13px;
-            line-height: 150%;
-            /* identical to box height, or 20px */
-
-            display: flex;
+            z-index: 99;
             align-items: center;
-            letter-spacing: 0.02em;
-            text-transform: uppercase;
-
-            /* white */
-
-            color: #FFFFFF;
+            margin-top: 140px;
+            margin-left: 45px;
             @include mobile {
-                display: none
-              }
-        }
-    }
-    .left {
-        position: absolute;
-        z-index: 99;
-        align-items: center;
-        margin-top: 140px;
-        margin-left: 45px;
-        @include mobile {
-            margin-top: 100px;
-            margin-left: 15px;
-          }
-        .left-title {
-            font-family: 'Rubik';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 75px;
-            line-height: 120%;
-            /* or 90px */
-
-            display: flex;
-            align-items: center;
-            letter-spacing: 0.02em;
-            text-transform: uppercase;
-
-            /* white */
-
-            color: #FFFFFF;
-            @include mobile {
-                font-size: 35px;
-                width: 345px;
-              }
-            
-        }
-        .line {
-            border: 4px solid #CF1257;
-            width: 94px;
-            padding: 0;
-            margin: 0;
-            margin-top: -50px;
-            @include mobile {
-                margin-top: -15px;
-              }
-        }
-        .left-des {
-            font-family: 'Hind';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 150%;
-            /* or 27px */
-
-            display: flex;
-            align-items: center;
-            letter-spacing: 0.02em;
-
-            width: 355px;
-
-            color: #FFFFFF;
-            margin-top: 50px;
-        }
-        .left-bottoms {
-            @include flex(center, space-between);
-            width: 330px;
-            .left-btn-y {
-                width: 150px;
-                height: 46px;
-                background: #F8BA1A;
-                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-                border-radius: 28px;
-                font-family: 'Hind';
+                margin-top: 100px;
+                margin-left: 15px;
+            }
+            .left-title {
+                font-family: "Rubik";
                 font-style: normal;
-                font-weight: 600;
-                font-size: 13px;
-                line-height: 150%;
-                @include flex(center, center);
+                font-weight: 700;
+                font-size: 75px;
+                line-height: 120%;
+                /* or 90px */
+
+                display: flex;
+                align-items: center;
                 letter-spacing: 0.02em;
                 text-transform: uppercase;
-                color: #FFFFFF;
+
+                /* white */
+
+                color: #ffffff;
+                @include mobile {
+                    font-size: 35px;
+                    width: 345px;
+                }
             }
-            .left-btn-w {
-                width: 150px;
-                height: 46px;
-                border: 2px solid #FFFFFF;
-                border-radius: 28px;
-                font-family: 'Hind';
+            .line {
+                border: 4px solid #cf1257;
+                width: 94px;
+                padding: 0;
+                margin: 0;
+                margin-top: -50px;
+                @include mobile {
+                    margin-top: -15px;
+                }
+            }
+            .left-des {
+                font-family: "Hind";
                 font-style: normal;
-                font-weight: 600;
-                font-size: 13px;
+                font-weight: 400;
+                font-size: 18px;
                 line-height: 150%;
-                @include flex(center, center);
+                /* or 27px */
+
+                display: flex;
+                align-items: center;
                 letter-spacing: 0.02em;
-                text-transform: uppercase;
-                color: #FFFFFF;
+
+                width: 355px;
+
+                color: #ffffff;
+                margin-top: 50px;
+            }
+            .left-bottoms {
+                @include flex(center, space-between);
+                width: 330px;
+                .left-btn-y {
+                    width: 150px;
+                    height: 46px;
+                    background: #f8ba1a;
+                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+                    border-radius: 28px;
+                    font-family: "Hind";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 150%;
+                    @include flex(center, center);
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                }
+                .left-btn-w {
+                    width: 150px;
+                    height: 46px;
+                    border: 2px solid #ffffff;
+                    border-radius: 28px;
+                    font-family: "Hind";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 150%;
+                    @include flex(center, center);
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                }
             }
         }
-    }
-    .top-mobile {
-        
-        width: 90%;
-        height: 100vh;
-        background: #FFFFFF;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 999;
-        display: none;
-        transition-duration: 500ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        .top-mobile {
+            width: 90%;
+            height: 100vh;
+            background: #ffffff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            display: none;
+            transition-duration: 500ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             @include mobile {
                 display: block;
                 // width: 100%;
             }
-        .mobile {
-            position: relative;
-            
-            .MaskMobileLogo {
-                @include flex(center, center);
-                margin-top: 30px;
-                flex-direction: column;
-                .mobile-ul {
-                    margin-left: -30px;
-                
-                    .mobile-item {
-                        list-style: none;
-                        text-align: center;
-                        font-family: 'Hind';
+            .mobile {
+                position: relative;
+
+                .MaskMobileLogo {
+                    @include flex(center, center);
+                    margin-top: 30px;
+                    flex-direction: column;
+                    .mobile-ul {
+                        margin-left: -30px;
+
+                        .mobile-item {
+                            list-style: none;
+                            text-align: center;
+                            font-family: "Hind";
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 150%;
+                            /* identical to box height, or 24px */
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            letter-spacing: 0.02em;
+                            text-transform: uppercase;
+
+                            color: #090f3f;
+                            margin-top: 20px;
+                        }
+                    }
+                    .mobile-btn {
+                        width: 147px;
+                        height: 41px;
+                        background: #090f3f;
+                        border-radius: 28px;
+                        font-family: "Hind";
                         font-style: normal;
                         font-weight: 600;
                         font-size: 16px;
                         line-height: 150%;
-                        /* identical to box height, or 24px */
-    
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         letter-spacing: 0.02em;
                         text-transform: uppercase;
-    
-                        color: #090F3F;
-                        margin-top: 20px;
+                        color: #ffffff;
+                        margin-top: 15px;
+                    }
+                    .mobile-logos {
+                        @include flex(center, space-between);
+                        list-style: none;
+                        margin-top: 100px;
+                        width: 80%;
+                        margin-left: -30px;
                     }
                 }
-                .mobile-btn {
-                    width: 147px;
-                    height: 41px;
-                    background: #090F3F;
-                    border-radius: 28px;
-                    font-family: 'Hind';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 150%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    letter-spacing: 0.02em;
-                    text-transform: uppercase;
-                    color: #FFFFFF;
-                    margin-top: 15px;
-                }
-                .mobile-logos {
-                    @include flex(center, space-between);
-                    list-style: none;
-                    margin-top: 100px;
-                    width: 80%;
-                    margin-left: -30px;
+                .right-x {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    right: -22px;
+                    border-radius: 50%;
+                    top: -4px;
+
+                    background: #ffffff;
+                    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+                    @include flex(center, center);
+                    .text-gray {
+                        width: 23px;
+                    }
                 }
             }
-            .right-x {
-                position: absolute;
-                width: 50px;
-                height: 50px;
-                right: -22px;
-                border-radius: 50%;
-                top: -4px;
-
-                background: #FFFFFF;
-                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-                @include flex(center, center);
-                .text-gray {
-                    width: 23px;
-                }
-            }
-            
-
         }
-    }
-        
-
     }
 }

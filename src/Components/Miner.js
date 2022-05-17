@@ -1,124 +1,29 @@
-import Maskl8 from "../assets/Group12.png";
-import undraw_con from "../assets/undraw_con.png";
+import Maskl8 from "../assets/miner-img1.png";
+import undraw_con from "../assets/shar.png";
 import undraw_con_img from "../assets/global-img.png";
 import imagebittrex from "../assets/imagebittrex.png";
 import imagebitfinex from "../assets/imagebitfinex.png";
 import imagepoloniex from "../assets/imagepoloniex.png";
 import undraw_laravel from "../assets/undraw_laravel.png";
-import "../Styles/components/Global.scss";
-function Global() {
+import "../Styles/components/Miner.scss";
+function Miner() {
   return (
     <>
-      <div className="global">
+      <div className="miner">
         <img className="global-img" src={Maskl8} />
         <img className="undraw" src={undraw_con} />
         <img className="global-img-m" src={undraw_con_img} />
         <div className="global-left">
           <div className="welcome">
             <div className="line"></div>
-            <div className="welcome-title">05. NETWORK</div>
+            <div className="welcome-title">09. MINER</div>
           </div>
-          <h1 className="digital-title">Growing Global Network</h1>
+          <h1 className="digital-title">Compatible GPU Miner Software</h1>
           <p className="digital-des">
-            Lymcoin is rapidly gaining popularity among crypto community. Lots
-            of real companies and exchanges have adopted our coin already. There
-            is much more to come. Stay tuned.
+            Download one of these miners for your GPU
           </p>
           <div className="global-numbers">
             <div className="number-item">
-              50+
-              <div className="item-title">Exchanges</div>
-            </div>
-            <div className="number-item">
-              180+
-              <div className="item-title">Companies</div>
-            </div>
-          </div>
-          <div className="global-images">
-            <img className="images-item" src={imagebittrex} />
-            <img className="images-item" src={imagebitfinex} />
-            <img className="images-item" src={imagepoloniex} />
-          </div>
-        </div>
-      </div>
-      <div className="digitall">
-        <img className="digital-img" src={undraw_laravel} />
-        <div className="digital-right">
-          <div className="welcome">
-            <div className="line"></div>
-            <div>06. WALLETS</div>
-          </div>
-          <h1 className="digital-title">Lymcoin Wallets</h1>
-          <div className="buttons">
-            <div className="btn-firts">contuct us</div>
-            <div className="btn">contuct us</div>
-            <div className="btn">contuct us</div>
-            <div className="btn">contuct us</div>
-          </div>
-          <div className="android">
-            <div className="android-item">
-              <svg
-                width="34"
-                height="40"
-                viewBox="0 0 34 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M27.1458 13.2061H6.85437C6.40299 13.2061 6.03711 13.5719 6.03711 14.0233V31.0394C6.03711 31.4907 6.40299 31.8566 6.85437 31.8566H10.4719V37.5911C10.4719 38.9216 11.5504 40.0003 12.881 40.0003C14.2115 40.0003 15.2902 38.9217 15.2902 37.5911V31.8566H18.6598V37.5911C18.6598 38.9216 19.7384 40.0003 21.069 40.0003C22.3995 40.0003 23.4782 38.9217 23.4782 37.5911V31.8566H27.1459C27.5973 31.8566 27.9632 31.4907 27.9632 31.0394V14.0233C27.9631 13.5719 27.5972 13.2061 27.1458 13.2061Z"
-                  fill="#CF1257"
-                />
-                <path
-                  d="M2.60168 13.2017C1.27118 13.2017 0.192505 14.2802 0.192505 15.6108V25.396C0.192505 26.7265 1.27108 27.8051 2.60168 27.8051C3.93218 27.8051 5.01086 26.7266 5.01086 25.396V15.6108C5.01076 14.2803 3.93218 13.2017 2.60168 13.2017Z"
-                  fill="#CF1257"
-                />
-                <path
-                  d="M31.3984 13.2017C30.0679 13.2017 28.9893 14.2802 28.9893 15.6108V25.396C28.9893 26.7265 30.0678 27.8051 31.3984 27.8051C32.7289 27.8051 33.8076 26.7266 33.8076 25.396V15.6108C33.8076 14.2803 32.729 13.2017 31.3984 13.2017Z"
-                  fill="#CF1257"
-                />
-                <path
-                  d="M7.01855 12.0124H26.9337C27.4532 12.0124 27.8407 11.5338 27.734 11.0253C27.0752 7.88564 25.0763 5.23974 22.3639 3.71124L24.0663 0.639426C24.1816 0.431456 24.1064 0.169364 23.8985 0.054148C23.69 -0.0613585 23.4283 0.0140644 23.3131 0.222034L21.5977 3.31699C20.1928 2.665 18.627 2.30086 16.9761 2.30086C15.3251 2.30086 13.7594 2.665 12.3544 3.31699L10.639 0.221937C10.5237 0.0138708 10.2616 -0.0611648 10.0538 0.0540511C9.84579 0.169267 9.77066 0.431359 9.88587 0.639329L11.5884 3.71114C8.87594 5.23974 6.877 7.88554 6.21823 11.0253C6.11144 11.5338 6.49891 12.0124 7.01855 12.0124ZM22.9185 7.43446C22.9185 7.94586 22.504 8.36054 21.9925 8.36054C21.4811 8.36054 21.0664 7.94596 21.0664 7.43446C21.0664 6.92305 21.481 6.50837 21.9925 6.50837C22.504 6.50837 22.9185 6.92305 22.9185 7.43446ZM11.9596 6.50837C12.471 6.50837 12.8857 6.92296 12.8857 7.43446C12.8857 7.94586 12.4711 8.36054 11.9596 8.36054C11.4482 8.36054 11.0335 7.94596 11.0335 7.43446C11.0335 6.92305 11.4481 6.50837 11.9596 6.50837Z"
-                  fill="#CF1257"
-                />
-              </svg>
-              <div className="item-right">
-                <h3 className="item-title">Android Lymcoin Wallet</h3>
-                <p className="item-des">Download</p>
-              </div>
-            </div>
-            <div className="android-item">
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_4_1010)">
-                  <path
-                    d="M30.9179 21.2531C30.8674 16.1874 35.0491 13.7579 35.2359 13.6372C32.8863 10.199 29.2261 9.72795 27.9218 9.6735C24.8069 9.35811 21.8439 11.5074 20.263 11.5074C18.6861 11.5074 16.2467 9.72014 13.6633 9.76709C10.2682 9.81756 7.13763 11.7412 5.38943 14.7819C1.86193 20.903 4.48607 29.971 7.9242 34.9353C9.6042 37.3653 11.6075 40.0945 14.2377 39.997C16.7706 39.8959 17.7284 38.358 20.7907 38.358C23.8529 38.358 24.7137 39.997 27.3941 39.9467C30.1197 39.8961 31.8465 37.4702 33.515 35.0328C35.4442 32.2137 36.2386 29.4844 36.2854 29.3444C36.2249 29.3167 30.9705 27.3038 30.9179 21.2531ZM25.8813 6.38709C27.2773 4.69342 28.2196 2.34365 27.9626 -0.000488281C25.9517 0.0813867 23.5143 1.33897 22.0715 3.02881C20.777 4.52787 19.6438 6.92045 19.9475 9.21771C22.1923 9.39287 24.4838 8.07693 25.8813 6.38709Z"
-                    fill="#CF1257"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_4_1010">
-                    <rect
-                      width="40"
-                      height="40"
-                      fill="white"
-                      transform="translate(0 -0.000488281)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-              <div className="item-right">
-                <h3 className="item-title">OSX Lymcoin Wallet</h3>
-                <p className="item-des">Download</p>
-              </div>
-            </div>
-          </div>
-          <div className="android">
-            <div className="android-item">
               <svg
                 width="40"
                 height="40"
@@ -148,7 +53,7 @@ function Global() {
                 <p className="item-des">Download</p>
               </div>
             </div>
-            <div className="android-item">
+            <div className="number-item">
               <svg
                 width="40"
                 height="40"
@@ -179,10 +84,20 @@ function Global() {
               </div>
             </div>
           </div>
+          <div className="miner-numberss">
+            <div className="number-item">
+              87 278
+              <p className="number-item-des">Total miners</p>
+            </div>
+            <div className="number-item">
+              2.82 Tsol/s
+              <p className="number-item-des">Total hashrate</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
   );
 }
 
-export default Global;
+export default Miner;

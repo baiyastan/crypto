@@ -1,0 +1,163 @@
+@import "../mixins.scss";
+
+.team {
+    position: relative;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+    @include flex(center, center);
+    @include mobile {
+        flex-direction: column;
+        max-width: 450;
+        margin-top: 20px;
+    }
+    flex-direction: column;
+    @include mobile {
+        width: 90%;
+    }
+    .digital-right {
+        width: 100%;
+        @include flex(center, center);
+        flex-direction: column;
+        .welcome {
+            @include flex(center, space-between);
+            width: 230px;
+            @include mobile {
+                margin-top: 35px;
+            }
+
+            .line {
+                border: 4px solid #cf1257;
+                width: 94px;
+                padding: 0;
+                margin: 0;
+                margin-right: 15px;
+            }
+        }
+        .digital-title {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 500;
+            height: 54px;
+            font-size: 48px;
+            line-height: 120%;
+            width: 570px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: #090f3f;
+            margin-left: 37px;
+            @include mobile {
+                width: 337px;
+                height: 36px;
+                font-size: 30px;
+            }
+        }
+        .digital-des {
+            width: 770px;
+            height: 54px;
+            font-family: "Hind";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+            color: #4f4f4f;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            @include mobile {
+                width: 305px;
+                height: 54px;
+                font-size: 12px;
+            }
+        }
+    }
+    .top-dev {
+        position: relative;
+        .left {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            @include mobile {
+                width: 30.37px;
+                height: 30.37px;
+                top: 50px;
+                left: -50px;
+            }
+        }
+        .right {
+            width: 26px;
+            height: 26px;
+            position: absolute;
+            top: 100px;
+            right: 0px;
+            @include mobile {
+                width: 30.37px;
+                height: 30.37px;
+                top: 50px;
+                right: -50px;
+            }
+        }
+        .devoloper {
+            @include flex(center, space-around);
+            width: 1000px;
+            overflow-x: scroll;
+            @include mobile {
+                width: 200px;
+                justify-content: flex-start;
+            }
+            .dev-item {
+                text-align: center;
+                .dev-img {
+                    width: 200px;
+                    height: 200px;
+                    @include mobile {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                .dev-title {
+                    font-family: "Hind";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 150%;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: 0.02em;
+                    margin-left: 20px;
+                    padding: 0px;
+                    color: #090f3f;
+                    margin: 0;
+                    @include mobile {
+                        font-size: 14px;
+                    }
+                }
+                .dev-des {
+                    font-family: "Hind";
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 150%;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: 0.02em;
+                    color: #4f4f4f;
+                    margin-left: 10px;
+                    padding: 0px;
+                    margin: 0;
+                    @include mobile {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

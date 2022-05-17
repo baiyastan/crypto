@@ -1,8 +1,9 @@
 @import "../mixins.scss";
 
-.global {
+.miner {
     position: relative;
     height: 848px;
+    margin-top: 70px;
     @include mobile {
         left: -190px;
     }
@@ -13,7 +14,7 @@
     }
     .undraw {
         position: absolute;
-        right: 80px;
+        right: 20px;
         bottom: 240px;
         @include mobile {
             display: none;
@@ -31,15 +32,16 @@
         position: absolute;
         z-index: 99;
         top: 200px;
-        left: 100px;
+        left: 120px;
         @include mobile {
-            left: 30px;
+            left: 10px;
+            top: 170px;
         }
         .welcome {
             @include flex(center, space-between);
             width: 260px;
             @include mobile {
-                margin-top: 35px;
+                margin-top: 10px;
             }
 
             .line {
@@ -55,14 +57,9 @@
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 150%;
-                /* identical to box height, or 27px */
-
                 display: flex;
                 align-items: center;
                 letter-spacing: 0.02em;
-
-                /* white */
-
                 color: #ffffff;
             }
         }
@@ -73,24 +70,24 @@
             font-size: 48px;
             line-height: 120%;
             width: 500px;
-            height: 174px;
+            height: 116px;
             display: flex;
             align-items: center;
             letter-spacing: 0.02em;
             color: #ffffff;
             margin: 0;
             padding: 0;
+            margin-top: 10px;
             @include mobile {
                 width: 243px;
                 height: 72px;
                 font-size: 30px;
-                margin-top: 10px;
                 padding: 0;
             }
         }
         .digital-des {
             width: 556px;
-            height: 81px;
+            height: 27px;
             font-family: "Hind";
             font-style: normal;
             font-weight: 300;
@@ -102,32 +99,62 @@
             color: #ffffff;
             margin: 0;
             padding: 0;
+            margin-top: 10px;
             @include mobile {
                 width: 305px;
                 height: 54px;
                 font-size: 12px;
-                margin-top: 25px;
                 padding: 0;
             }
         }
     }
     .global-numbers {
-        @include flex(center, space-around);
+        @include flex(center, space-between);
         margin-top: 20px;
+        width: 750px;
+        flex-wrap: wrap;
+        @include mobile {
+            width: 370px;
+        }
         .number-item {
-            font-family: "Rubik";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 48px;
-            line-height: 120%;
+            width: 350px;
+            height: 77px;
+            background: #0b060c;
+            box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.15);
+            border-radius: 38.5px;
             display: flex;
             align-items: center;
-            letter-spacing: 0.02em;
-            color: #ffffff;
-            display: block;
+            padding-left: 15px;
             @include mobile {
                 font-size: 35px;
                 margin-top: 10px;
+            }
+            .item-right {
+                margin-left: 20px;
+                .item-title {
+                    font-family: "Hind";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 150%;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.02em;
+                    color: #ffffff;
+                    margin: auto;
+                }
+                .item-des {
+                    font-family: "Hind";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 150%;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.02em;
+                    color: #ffffff;
+                    margin: auto;
+                }
             }
             .item-title {
                 font-family: "Hind";
@@ -149,18 +176,39 @@
             }
         }
     }
-    .global-images {
+    .miner-numberss {
         position: absolute;
-        width: 700px;
-        @include flex(center, space-around);
+        width: 500px;
+        @include flex(center, space-between);
         margin-top: 40px;
-        margin-left: 80px;
-        .images-item {
-            width: 180px;
-            height: 26px;
+        @include mobile {
+            width: 350px !important;
+            @include flex(center, space-around);
+            margin-left: 0px !important;
+        }
+        .number-item {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 120%;
+            align-items: center;
+            letter-spacing: 0.02em;
+            color: #ffffff;
             @include mobile {
-                width: 113px;
-                height: 16px;
+                font-size: 35px;
+            }
+            .number-item-des {
+                font-family: "Hind";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 150%;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.02em;
+                color: #ffffff;
+                opacity: 0.7;
             }
         }
         @include mobile {
@@ -235,58 +283,55 @@
                 padding: 0;
             }
         }
-        .buttons {
-            @include flex(center, space-between);
-            margin-top: 30px;
-            max-width: 750px;
-            flex-wrap: wrap;
-            @include mobile {
-                @include flex(center, space-around);
-            }
+        // .buttons {
+        //     @include flex(center, space-between);
+        //     margin-top: 30px;
+        //     max-width: 750px;
+        //     flex-wrap: wrap;
 
-            .btn {
-                width: 150px;
-                height: 46px;
-                left: 795px;
-                top: 4726.73px;
-                background-color: #ffffff;
-                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-                border-radius: 28px;
-                font-family: "Hind";
-                font-style: normal;
-                font-weight: 600;
-                font-size: 13px;
-                line-height: 150%;
-                @include flex(center, center);
-                letter-spacing: 0.02em;
-                text-transform: uppercase;
-                color: #090f3f;
-                @include mobile {
-                    margin-top: 35px;
-                }
-            }
-            .btn-firts {
-                width: 150px;
-                height: 46px;
-                left: 795px;
-                top: 4726.73px;
-                background-color: #f8ba1a;
-                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-                border-radius: 28px;
-                font-family: "Hind";
-                font-style: normal;
-                font-weight: 600;
-                font-size: 13px;
-                line-height: 150%;
-                @include flex(center, center);
-                letter-spacing: 0.02em;
-                text-transform: uppercase;
-                color: #ffffff;
-                @include mobile {
-                    margin-top: 35px;
-                }
-            }
-        }
+        //     .btn {
+        //         width: 150px;
+        //         height: 46px;
+        //         left: 795px;
+        //         top: 4726.73px;
+        //         background-color: #ffffff;
+        //         box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+        //         border-radius: 28px;
+        //         font-family: "Hind";
+        //         font-style: normal;
+        //         font-weight: 600;
+        //         font-size: 13px;
+        //         line-height: 150%;
+        //         @include flex(center, center);
+        //         letter-spacing: 0.02em;
+        //         text-transform: uppercase;
+        //         color: #090f3f;
+        //         @include mobile {
+        //             margin-top: 35px;
+        //         }
+        //     }
+        //     .btn-firts {
+        //         width: 150px;
+        //         height: 46px;
+        //         left: 795px;
+        //         top: 4726.73px;
+        //         background-color: #f8ba1a;
+        //         box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+        //         border-radius: 28px;
+        //         font-family: "Hind";
+        //         font-style: normal;
+        //         font-weight: 600;
+        //         font-size: 13px;
+        //         line-height: 150%;
+        //         @include flex(center, center);
+        //         letter-spacing: 0.02em;
+        //         text-transform: uppercase;
+        //         color: #ffffff;
+        //         @include mobile {
+        //             margin-top: 35px;
+        //         }
+        //     }
+        // }
         .android {
             @include flex(center, space-between);
             margin-top: 30px;
