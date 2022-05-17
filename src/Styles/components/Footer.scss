@@ -1,0 +1,165 @@
+@import "../mixins.scss";
+.footer {
+    position: relative;
+    .footer-img {
+        @include mobile {
+            display: none;
+        }
+    }
+    .footer-img-m {
+        display: none;
+        @include mobile {
+            display: block;
+        }
+    }
+    .footer-center {
+        position: absolute;
+        z-index: 99;
+        top: 0;
+        @include flex(center, center);
+        width: 100%;
+        margin-top: 200px;
+        flex-direction: column;
+        .footer-title {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 120%;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #ffffff;
+            width: 570px;
+            height: 116px;
+            @include mobile {
+                font-size: 30px;
+                width: 340px;
+            }
+        }
+        .footer-line {
+            width: 94px;
+            height: 5px;
+            background: #cf1257;
+            margin-bottom: 20px;
+            margin-top: -10px;
+        }
+        .footer-bottom-des {
+            font-family: "Hind";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 150%;
+            /* identical to box height, or 27px */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.02em;
+
+            /* white */
+
+            color: #ffffff;
+            margin-top: 70px;
+            opacity: 0.7;
+            @include mobile {
+                font-size: 12px;
+            }
+        }
+        .footer-search {
+            width: 510px;
+            height: 60px;
+            background-color: #ffffff;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            position: relative;
+            @include flex(center, space-between);
+            @include mobile {
+                width: 347px;
+            }
+            .footer-input {
+                outline: none;
+                border: none;
+                margin-left: 10px;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                font-family: "Hind";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 150%;
+                /* identical to box height, or 27px */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.02em;
+
+                /* Gray 2 */
+
+                color: #4f4f4f;
+            }
+            .footer-btn {
+                width: 150px;
+                height: 46px;
+                left: 818px;
+                top: 9055px;
+                background-color: #f8ba1a;
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+                border-radius: 28px;
+                font-family: "Hind";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 150%;
+                @include flex(center, center);
+                text-align: center;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                color: #090f3f;
+                margin-right: 10px;
+            }
+        }
+        .footer-chek {
+            @include flex(center, space-between);
+            width: 400px;
+            margin-top: 10px;
+            @include mobile {
+                width: 300px;
+            }
+            .checkbox {
+                width: 22px;
+                height: 22px;
+                border: 1px solid #ffffff;
+                filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+                border-radius: 4px;
+                background: #090f3f;
+            }
+            .footer-des {
+                font-family: "Hind";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 150%;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.02em;
+                color: #ffffff;
+
+                opacity: 0.7;
+                @include mobile {
+                    font-size: 12px;
+                }
+            }
+        }
+        .footer-soshial {
+            @include flex(center, space-between);
+            width: 500px;
+            margin-top: 100px;
+            @include mobile {
+                width: 347px;
+                margin-top: 50px;
+            }
+        }
+    }
+}

@@ -43,12 +43,10 @@
             font-size: 48px;
             line-height: 120%;
             width: 570px;
-            display: flex;
             align-items: center;
             letter-spacing: 0.02em;
             text-align: center;
             color: #090f3f;
-            margin-left: 37px;
             @include mobile {
                 width: 337px;
                 height: 36px;

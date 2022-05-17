@@ -6,6 +6,8 @@ import Global from "./Global";
 import Team from "./Team";
 import Charts from "./Charts";
 import Miner from "./Miner";
+import Events from "./Events";
+import Footer from "./Footer";
 function Main() {
   return (
     <div className="container">
@@ -16,6 +18,8 @@ function Main() {
       <Team />
       <Charts />
       <Miner />
+      <Events />
+      <Footer />
     </div>
   );
 }
